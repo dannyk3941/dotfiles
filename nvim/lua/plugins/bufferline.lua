@@ -1,12 +1,15 @@
 -------------------------------------------------------------------------
 --                                                                     --
---                          Nvim Autopairs                             --
---            https://github.com/windwp/nvim-autopairs                 --
+--                          Nvim Bufferline                            --
+--            https://github.com/akinsho/bufferline.nvim               --
 --                                                                     --
 -------------------------------------------------------------------------
 
 return {
-  'windwp/nvim-autopairs',
-  event = "InsertEnter",
-  opts = {}
+  {
+    'akinsho/bufferline.nvim',
+    version = "*",
+    dependencies = 'nvim-tree/nvim-web-devicons'
+  }
 }
+
